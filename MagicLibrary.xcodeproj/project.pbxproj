@@ -10,6 +10,8 @@
 		0A28ABEC1A7101F0007B6C61 /* MagicLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A28ABEB1A7101F0007B6C61 /* MagicLibrary.h */; };
 		0A28ABEE1A7101F0007B6C61 /* MagicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28ABED1A7101F0007B6C61 /* MagicLibrary.m */; };
 		0A28ABF41A7101F0007B6C61 /* libMagicLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A28ABE81A7101F0007B6C61 /* libMagicLibrary.a */; };
+		0A28AC401A710509007B6C61 /* UIViewController+LabelAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28AC3F1A710509007B6C61 /* UIViewController+LabelAlert.m */; };
+		0A28AC411A710516007B6C61 /* UIViewController+LabelAlert.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A28AC3E1A710509007B6C61 /* UIViewController+LabelAlert.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				0A28AC411A710516007B6C61 /* UIViewController+LabelAlert.h in CopyFiles */,
 				0A28ABEC1A7101F0007B6C61 /* MagicLibrary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +44,8 @@
 		0A28ABED1A7101F0007B6C61 /* MagicLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicLibrary.m; sourceTree = "<group>"; };
 		0A28ABF31A7101F0007B6C61 /* MagicLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A28ABF91A7101F0007B6C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A28AC3E1A710509007B6C61 /* UIViewController+LabelAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LabelAlert.h"; sourceTree = "<group>"; };
+		0A28AC3F1A710509007B6C61 /* UIViewController+LabelAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LabelAlert.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 			children = (
 				0A28ABEB1A7101F0007B6C61 /* MagicLibrary.h */,
 				0A28ABED1A7101F0007B6C61 /* MagicLibrary.m */,
+				0A28AC3E1A710509007B6C61 /* UIViewController+LabelAlert.h */,
+				0A28AC3F1A710509007B6C61 /* UIViewController+LabelAlert.m */,
 			);
 			path = MagicLibrary;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A28AC401A710509007B6C61 /* UIViewController+LabelAlert.m in Sources */,
 				0A28ABEE1A7101F0007B6C61 /* MagicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
