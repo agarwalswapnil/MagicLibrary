@@ -1,5 +1,5 @@
 //
-//  UIViewController+LabelAlert.h
+//  UIView+DrawRect.h
 //  MagicLibrary
 //
 //  Created by Swapnil Agarwal on 22/01/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (LabelAlert)
+@interface UIView (DrawRect)
 
 @end
