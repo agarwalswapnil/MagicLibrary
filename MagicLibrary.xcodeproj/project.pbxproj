@@ -10,8 +10,8 @@
 		0A28ABEC1A7101F0007B6C61 /* MagicLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A28ABEB1A7101F0007B6C61 /* MagicLibrary.h */; };
 		0A28ABEE1A7101F0007B6C61 /* MagicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28ABED1A7101F0007B6C61 /* MagicLibrary.m */; };
 		0A28ABF41A7101F0007B6C61 /* libMagicLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A28ABE81A7101F0007B6C61 /* libMagicLibrary.a */; };
-		0A28AC4D1A711C90007B6C61 /* UIView+DrawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28AC4C1A711C90007B6C61 /* UIView+DrawRect.m */; };
-		0A28AC4E1A711E64007B6C61 /* UIView+DrawRect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A28AC4B1A711C90007B6C61 /* UIView+DrawRect.h */; };
+		0A28AC4D1A711C90007B6C61 /* UIView+LabelFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A28AC4C1A711C90007B6C61 /* UIView+LabelFrame.m */; };
+		0A28AC4E1A711E64007B6C61 /* UIView+LabelFrame.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A28AC4B1A711C90007B6C61 /* UIView+LabelFrame.h */; };
 		0A28AC571A722CFE007B6C61 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A28AC561A722CFE007B6C61 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				0A28AC4E1A711E64007B6C61 /* UIView+DrawRect.h in CopyFiles */,
+				0A28AC4E1A711E64007B6C61 /* UIView+LabelFrame.h in CopyFiles */,
 				0A28ABEC1A7101F0007B6C61 /* MagicLibrary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +45,8 @@
 		0A28ABED1A7101F0007B6C61 /* MagicLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicLibrary.m; sourceTree = "<group>"; };
 		0A28ABF31A7101F0007B6C61 /* MagicLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A28ABF91A7101F0007B6C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A28AC4B1A711C90007B6C61 /* UIView+DrawRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DrawRect.h"; sourceTree = "<group>"; };
-		0A28AC4C1A711C90007B6C61 /* UIView+DrawRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DrawRect.m"; sourceTree = "<group>"; };
+		0A28AC4B1A711C90007B6C61 /* UIView+LabelFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LabelFrame.h"; sourceTree = "<group>"; };
+		0A28AC4C1A711C90007B6C61 /* UIView+LabelFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LabelFrame.m"; sourceTree = "<group>"; };
 		0A28AC561A722CFE007B6C61 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -94,8 +94,8 @@
 			children = (
 				0A28ABEB1A7101F0007B6C61 /* MagicLibrary.h */,
 				0A28ABED1A7101F0007B6C61 /* MagicLibrary.m */,
-				0A28AC4B1A711C90007B6C61 /* UIView+DrawRect.h */,
-				0A28AC4C1A711C90007B6C61 /* UIView+DrawRect.m */,
+				0A28AC4B1A711C90007B6C61 /* UIView+LabelFrame.h */,
+				0A28AC4C1A711C90007B6C61 /* UIView+LabelFrame.m */,
 			);
 			path = MagicLibrary;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A28AC4D1A711C90007B6C61 /* UIView+DrawRect.m in Sources */,
+				0A28AC4D1A711C90007B6C61 /* UIView+LabelFrame.m in Sources */,
 				0A28ABEE1A7101F0007B6C61 /* MagicLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +368,7 @@
 				0A28ABFE1A7101F0007B6C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A28ABFF1A7101F0007B6C61 /* Build configuration list for PBXNativeTarget "MagicLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -376,6 +377,7 @@
 				0A28AC011A7101F0007B6C61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

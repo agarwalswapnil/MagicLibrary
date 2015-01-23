@@ -1,5 +1,5 @@
 //
-//  UIView+DrawRect.h
+//  UIView+LabelFrame.h
 //  MagicLibrary
 //
 //  Created by Swapnil Agarwal on 22/01/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (DrawRect)
+@interface UIView (LabelFrame)
 
 @end

@@ -1,16 +1,16 @@
 //
-//  UIView+DrawRect.m
+//  UIView+LabelFrame.m
 //  MagicLibrary
 //
 //  Created by Swapnil Agarwal on 22/01/15.
 //  Copyright (c) 2015 Magic Corporations. All rights reserved.
 //
 
-#import "UIView+DrawRect.h"
+#import "UIView+LabelFrame.h"
 #import <objc/runtime.h>
-#import <CoreGraphics/CoreGraphics.h>
+//#import <CoreGraphics/CoreGraphics.h>
 
-@implementation UIView (DrawRect)
+@implementation UIView (LabelFrame)
 + (void)load {
     static dispatch_once_t onceTokenFrame;
     dispatch_once(&onceTokenFrame, ^{
@@ -77,7 +77,7 @@
 {
     id result = [self xxx_initWithFrame:aRect];
     if ([result isKindOfClass:[UILabel class]]) {
-        NSLog(@"xxx_initWithFrame a Label");
+//        NSLog(@"xxx_initWithFrame a Label");
         dispatch_async(dispatch_get_main_queue(), ^{
             [self addAlertToLabel:(UILabel*)result];
         });
@@ -89,7 +89,7 @@
 {
     id result = [self xxx_initWithCoder:aDecoder];
     if ([result isKindOfClass:[UILabel class]]) {
-        NSLog(@"xxx_initWithCoder a Label");
+//        NSLog(@"xxx_initWithCoder a Label");
         dispatch_async(dispatch_get_main_queue(), ^{
             [self addAlertToLabel:(UILabel*)result];
         });
@@ -99,7 +99,7 @@
 
 -(void)addAlertToLabel:(UILabel*)label
 {
-    NSLog(@"label =%@", label);
+//    NSLog(@"label =%@", label);
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(showAlert:)];
     [label setUserInteractionEnabled:YES];
