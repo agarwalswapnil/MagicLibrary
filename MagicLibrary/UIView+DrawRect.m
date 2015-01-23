@@ -78,7 +78,9 @@
     id result = [self xxx_initWithFrame:aRect];
     if ([result isKindOfClass:[UILabel class]]) {
         NSLog(@"xxx_initWithFrame a Label");
-        [self addAlert:result];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self addAlertToLabel:(UILabel*)result];
+        });
     }
     return result;
 }
@@ -88,16 +90,19 @@
     id result = [self xxx_initWithCoder:aDecoder];
     if ([result isKindOfClass:[UILabel class]]) {
         NSLog(@"xxx_initWithCoder a Label");
-        [self addAlert:result];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self addAlertToLabel:(UILabel*)result];
+        });
     }
     return result;
 }
 
--(void)addAlert:(id)label
+-(void)addAlertToLabel:(UILabel*)label
 {
-    [label setUserInteractionEnabled:YES];
+    NSLog(@"label =%@", label);
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                           action:@selector(showAlert:)];
+    [label setUserInteractionEnabled:YES];
     [label addGestureRecognizer:tap];
 }
 
