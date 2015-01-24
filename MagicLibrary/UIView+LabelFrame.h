@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  We are making a category of UIView, and calling it LabelFrame
+ */
 @interface UIView (LabelFrame)
 
 @end
